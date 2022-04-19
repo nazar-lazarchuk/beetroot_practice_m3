@@ -3,17 +3,19 @@
 }
 
 :root {
-    // --color-theme1: #fec77e;
-    // --color-theme2: #cc2a41;
-    // --color-primary-text: #000;
-    // --color-secondary: #ece9e9;
+    --background: #403C3B;
+    --background-card-input: #504B4A;
+    --color-headlines: #FFFFFF;
+    --color-text: #CFCFCF;
+    --color-green: #618967;
 }
 
+  
 html,
 body {
     margin: 0;
     padding: 0;
-    // background-color: var(--color-secondary);
+    background-color: var(--background);
 }
 
 .container {
