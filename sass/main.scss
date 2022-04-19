@@ -3,21 +3,45 @@
 }
 
 :root {
-    // --color-theme1: #fec77e;
-    // --color-theme2: #cc2a41;
-    // --color-primary-text: #000;
-    // --color-secondary: #ece9e9;
+    --bg-input-activ-info-cards: #504b4a;
+    --bg-inactiv-info-cards: rgba(80, 75, 74, 0.9);
+    --bg-contact-form: #2e2b2c;
+    --color-headlines: #ffffff;
+    --color-text: #cfcfcf;
+    --color-green: #618967;
+    // Пример приминения цвета (background: var(--bg-input-activ-info-cards);)
+}
+@mixin bg-header {
+    background: #403c3b;
+    box-shadow: 0px 30px 60px rgba(34, 31, 32, 0.2);
+    // Для включения миксина @include green-gradient
+}
+@mixin bg-full-page {
+    background: -webkit-linear-gradient(bottom, #211f20 0%, #44403f 100%);
+}
+@mixin bg-product-cards {
+    background: -webkit-linear-gradient(90deg, #494544 0%, #504b4a 100%);
+}
+@mixin bg-footer {
+    background: -webkit-linear-gradient(180.7deg, #44403f 0.4%, #211f20 100%);
+}
+@mixin green-gradient {
+    background: -webkit-linear-gradient(114.93deg, #618967 5.11%, #72a479 94%);
+}
+@mixin black-gradient {
+    background: -webkit-linear-gradient(left, #211f20 0%, #292728 0%, rgba(68, 64, 63, 0) 100%);
 }
 
 html,
 body {
     margin: 0;
     padding: 0;
-    // background-color: var(--color-secondary);
+    height: 100%;
+    @include bg-full-page;
 }
 
 .container {
-    // max-width: 1440px;
-    // width: 100%;
-    // margin: 0 auto;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
 }
